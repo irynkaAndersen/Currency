@@ -3,6 +3,10 @@
 .idea/
 /idea/
 package-lock.json
+/api/package-lock.json
 /dist
 logs/
+/coverage
 redis-data/
+/api/node_modules/
+/api/.idea/

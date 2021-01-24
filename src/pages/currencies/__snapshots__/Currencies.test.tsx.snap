@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Currencies should render with data 1`] = `
+<div
+  className="wrap"
+>
+  <h1>
+    Currencies
+  </h1>
+  <div
+    className="currencies"
+  >
+    <table
+      className="table"
+    >
+      <thead
+        className="table_head"
+      >
+        <tr>
+          <td
+            key="code"
+          >
+            code
+            <button
+              className="sort"
+              onClick={[Function]}
+              type="button"
+            >
+              ↑
+            </button>
+          </td>
+          <td
+            key="symbol"
+          >
+            symbol
+            <button
+              className="sort"
+              onClick={[Function]}
+              type="button"
+            >
+              ↑
+            </button>
+          </td>
+          <td
+            key="rate"
+          >
+            rate
+            <button
+              className="sort"
+              onClick={[Function]}
+              type="button"
+            >
+              ↑
+            </button>
+          </td>
+          <td
+            key="description"
+          >
+            description
+            <button
+              className="sort"
+              onClick={[Function]}
+              type="button"
+            >
+              ↑
+            </button>
+          </td>
+          <td
+            key="rate_float"
+          >
+            rate_float
+            <button
+              className="sort"
+              onClick={[Function]}
+              type="button"
+            >
+              ↑
+            </button>
+          </td>
+        </tr>
+      </thead>
+      <tbody
+        className="table_body"
+      >
+        <tr
+          key="0"
+        >
+          <td
+            key="code"
+          >
+            EUR
+          </td>
+          <td
+            key="symbol"
+          >
+            &euro;
+          </td>
+          <td
+            key="rate"
+          >
+            26,389.9814
+          </td>
+          <td
+            key="description"
+          >
+            Euro
+          </td>
+          <td
+            key="rate_float"
+          >
+            26389.9814
+          </td>
+        </tr>
+        <tr
+          key="1"
+        >
+          <td
+            key="code"
+          >
+            GBP
+          </td>
+          <td
+            key="symbol"
+          >
+            &pound;
+          </td>
+          <td
+            key="rate"
+          >
+            23,439.7820
+          </td>
+          <td
+            key="description"
+          >
+            British Pound Sterling
+          </td>
+          <td
+            key="rate_float"
+          >
+            23439.782
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p
+      className="time"
+    >
+      Last updated: 
+      2021-01-23T20:42:13.306Z
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Currencies should render with error 1`] = `
+<div
+  className="wrap"
+>
+  <h1>
+    Currencies
+  </h1>
+  <div
+    className="currencies"
+  >
+    <div
+      className="error"
+    >
+      Service is not responding
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Currencies should render with loader 1`] = `
+<div
+  className="wrap"
+>
+  <h1>
+    Currencies
+  </h1>
+  <div
+    className="currencies"
+  >
+    <Loader />
+  </div>
+</div>
+`;

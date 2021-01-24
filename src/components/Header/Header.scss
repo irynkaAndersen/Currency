@@ -1,0 +1,26 @@
+@import "../../main.scss";
+
+.header {
+  border-bottom: solid 1px #000000;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link {
+  color: #c62727;
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}

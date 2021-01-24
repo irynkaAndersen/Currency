@@ -52,6 +52,7 @@ Running Frontend app
 1. Install https://nodejs.org/en/
 2. Open terminal, launch npm install then npm start
 3. Open http://localhost:3000 in your browser
+4. For running test use npm test
 
 Running BackEnd app
 1. Install https://nodejs.org/en/
