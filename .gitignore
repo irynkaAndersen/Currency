@@ -1,0 +1,8 @@
+.git
+/node_modules
+.idea/
+/idea/
+package-lock.json
+/dist
+logs/
+redis-data/
