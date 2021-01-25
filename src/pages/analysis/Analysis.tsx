@@ -1,6 +1,6 @@
-import React, { FC, useCallback, useState, ChangeEvent, useMemo } from "react";
+import React, { FC, useCallback, useState, ChangeEvent, useMemo, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { parseWebPageByURL } from "../../actions/analysis.action";
+import { parseWebPageByURL, clearError } from "../../actions/analysis.action";
 import { getAnalysisResultSelector } from "../../selectors/analysis.selector";
 import Loader from "../../components/Loader";
 
@@ -37,6 +37,12 @@ const Analysis: FC = () => {
         return <Loader />;
     }
   }, [status, data]);
+
+  useEffect(() => {
+    return () => {
+      dispatch(clearError)
+    }
+  },[]);
 
   return (
     <div className="wrap">

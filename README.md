@@ -56,5 +56,5 @@ Running Frontend app
 
 Running BackEnd app
 1. Install https://nodejs.org/en/
-2. Open terminal in currency/app, launch npm install then npm start
+2. Open terminal in currency/api, launch npm install then npm start
 3. Open http://localhost:8080 in your browser

@@ -28,4 +28,10 @@ export const parseWebPageByURL = (url: string) => async (
     });
 };
 
+export const clearError = (
+  dispatch: Dispatch
+) => {
+  dispatch(parseWebPageByURLAction({ data: {}, status: "fulfilled" }));
+};
+
 export default parseWebPageByURL;
