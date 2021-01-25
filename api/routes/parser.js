@@ -4,11 +4,7 @@ const parsePage = require("../controllers/parser");
 const router = express.Router();
 
 router.post("/", function (req, res) {
-  res.send({ //mock value
-    unique_tags: ["div", "a", "p"],
-    most_used_tag: "div",
-    longest_path: "div,div,div,div",
-  });
+  parsePage(req.body.url).then(data => res.send((data)));
 });
 
 module.exports = router;

@@ -65,9 +65,9 @@ const parsePage = async(url) => {
             request(url, function (error, response, body) {
                 return resolve(body);
             })
-        }).then((data) => {parseResult(data)})
+        }).then((data) => {return parseResult(data)})
         : null
 };
 
-console.log(parsePage("https://www.google.com/"));
+parsePage("https://www.google.com/").then(data => console.log(data));
 module.exports = parsePage;
